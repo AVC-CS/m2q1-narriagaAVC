@@ -4,7 +4,14 @@ def getPivot(number):
     return pivot
 
 def split(number):
-    
+    pivot = getPivot(number)
+    leftsub = []
+    rightsub = []
+    for i in range(len(number)):
+        if number[i] < pivot:
+            leftsub.append(number[i])
+        if number[i] > pivot:
+            rightsub.append(i)
 
 def main():
     # number = list(map(int, input().split()))
