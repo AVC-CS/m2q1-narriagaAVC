@@ -1,6 +1,9 @@
 def getPivot(number):
-    number.sort()
-    pivot = number[len(number) // 2]
+    avg = sum(number) / len(number)
+    pivot = number[0]
+    for i in number:
+        if abs (i - avg) < abs(pivot - avg):
+            pivot = i
     return pivot
 
 def split(number):
