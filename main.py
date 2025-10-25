@@ -11,7 +11,7 @@ def split(number):
         if number[i] < pivot:
             leftsub.append(number[i])
         if number[i] > pivot:
-            rightsub.append(i)
+            rightsub.append(number[i])
     newlist = leftsub + [pivot] + rightsub
     return newlist
 
