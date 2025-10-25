@@ -1,17 +1,10 @@
 def getPivot(number):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    number.sort()
+    pivot = number[len(number) // 2]
+    return pivot
 
 def split(number):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-
+    
 
 def main():
     # number = list(map(int, input().split()))
